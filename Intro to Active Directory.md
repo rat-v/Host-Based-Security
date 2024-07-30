@@ -9,8 +9,14 @@ to do more so I continue staying in the lab environment and mess around
 with settings and features to learn more.
 
 ## Skills Learned
+Creating Organizational Units and users in Active Directory
+Setting and updating domain-wide password policies
+Setting up logon/logoff scripts in Active Directory
+Assigning home folders for users and ensuring they are only accessible to the respective user
+Managing folder permissions and inheritance settings
 
-## Creating an Organizational Unit and Users
+
+## Creating an Organizational Unit
 
 Seems pretty trivial to create an OU and user, I can create an OU called
 "Minecraft" and a user called "creeper" just by using simple right click

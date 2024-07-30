@@ -160,5 +160,5 @@ but I can access my own (AFTER1's).
 And as User1, I can access my own User1 folder and the "Secrit
 Dokumints" text file inside, but I cannot access AFTER1's folder
 
-![](output\c. Active Directory/media/image4.png){width="9.088542213473316in"
-height="5.348985126859143in"}
+![image4](https://github.com/user-attachments/assets/a30a7500-cc4a-4b74-a593-10a2dadefb72)
+

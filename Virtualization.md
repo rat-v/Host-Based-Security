@@ -32,8 +32,10 @@ virtual machine on the system.
 
 ## Hyper-V on Windows 10
 
-First, I need to enable the feature, then restart the PC
+First, I need to enable the feature, then restart the PC<br>
+
 ![image1](https://github.com/user-attachments/assets/b369123a-4ff8-4772-b078-7faf248cc8bd)
+
 ![image6](https://github.com/user-attachments/assets/2082a4f3-698f-43bb-84b3-61123c1e6588)
 
 

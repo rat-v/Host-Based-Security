@@ -1,3 +1,4 @@
+## Objective
 In this lab, I am working with Active Directory to create units, users,
 and set policies on different levels. This will be my first ever
 exposure to Active Directory, but I've heard people talk about it a lot
@@ -7,18 +8,21 @@ This lab seems like a good introduction to Active Directory, but I want
 to do more so I continue staying in the lab environment and mess around
 with settings and features to learn more.
 
-### Creating an Organizational Unit and Users
+## Skills Learned
+
+## Creating an Organizational Unit and Users
 
 Seems pretty trivial to create an OU and user, I can create an OU called
 "Minecraft" and a user called "creeper" just by using simple right click
 options. I can do the same to create more users named "zombie" and
 "steve".
 
-![](output\c. Active Directory/media/image5.png){width="5.359375546806649in"
-height="3.6546041119860018in"}![](output\c. Active Directory/media/image16.png){width="4.902043963254593in"
-height="2.9412270341207347in"}
+![image5](https://github.com/user-attachments/assets/eb2e0e81-99b0-4cb6-8140-30626418827c)
+![image16](https://github.com/user-attachments/assets/245a91a2-66bd-4103-a750-6f0658595a2c)
 
-### Setting a Domain-wide password policy
+
+
+## Setting a Domain-wide password policy
 
 In Group Management Policy, I can right click on "Default Domain Policy"
 and click Edit. There, I can head to Policies -\> Windows Settings -\>
@@ -28,50 +32,44 @@ I can change the minimum requirements for a valid password. For example,
 setting the minimum character count to 10. Now, this password policy is
 set to everything inside the campus.edu domain that I am working in.
 
-![](output\c. Active Directory/media/image3.png){width="4.901042213473316in"
-height="4.9876323272090985in"}
+![image3](https://github.com/user-attachments/assets/41dbc6b8-2ac8-4017-96c1-b6dcae262e40)
+
 
 I can update the policy by typing "gpupdate /force" in command prompt.
 
 Now, I cannot create a new user without a proper password that meets the
 requirements.
 
-![](output\c. Active Directory/media/image9.png){width="10.0in"
-height="1.2361111111111112in"}
+![image9](https://github.com/user-attachments/assets/9b4786d1-142e-4caf-b45b-1cdbf5bb27a8)
 
-### 
 
-###  
 
-### Setting an Organizational-wide policy
+## Setting an Organizational-wide policy
 
 Now, I can edit the policies for the "Minecraft" Organizational Unit by
 right clicking "Minecraft" in Group Policy Management, and clicking on
 "Create a GPO in this domain, and link it here".
 
-![](output\c. Active Directory/media/image1.png){width="4.677083333333333in"
-height="3.2916666666666665in"}
+![image1](https://github.com/user-attachments/assets/fd4106ae-49e0-4f55-9adb-b370442f8c14)
+
 
 Now editing Minecraft's policies, I can prohibit their access to opening
 the Control Panel by navigating to User Configuration -\> Administrative
 Templates -\> {Control Panel}
-
-![](output\c. Active Directory/media/image8.png){width="8.78125in"
-height="7.270833333333333in"}
+![image8](https://github.com/user-attachments/assets/968703ff-97ec-4062-899b-71d4fc34f022)
 
 The lab ends here
 
-###  
 
-### Logon/Logoff Scripts
+## Logon/Logoff Scripts
 
 I can setup Windows scripts that will run when a user logs in or out of
 the computer. I restarted the lab environment and created a new OU and
 users to manage. Then, I created a GPO for that OU and navigated to User
 Config -\> Policies -\> Windows Settings -\> Scripts (Logon/Logoff)
 
-![](output\c. Active Directory/media/image12.png){width="10.0in"
-height="6.097222222222222in"}
+![image12](https://github.com/user-attachments/assets/dc9e4c9c-6da8-48eb-8954-1e5dc109ae1e)
+
 
 Right clicking and clicking Properties on the Logon script allows me to
 add a script file which would then run for a user in the OU when they
@@ -79,42 +77,41 @@ logon the system. I believe the script would just be something like a
 batch file, running the same commands you would enter in something like
 command prompt.
 
-### Assigning a home folder per user
+## Assigning a home folder per user
 
 By highlighting all the users in an OU, I can right click -\> Properties
 -\> Profile and set a home folder for them by creating a folder on the
 server, and then also adding %username% at the end of the path to create
 a new folder for each user that will be titled as their username.
 
-![](output\c. Active Directory/media/image14.png){width="7.544642388451444in"
-height="6.130021872265967in"}
+![image14](https://github.com/user-attachments/assets/2cfa9975-e28c-4859-870f-b782c31bb177)
 
-![](output\c. Active Directory/media/image13.png){width="8.45312554680665in"
-height="3.7802230971128608in"}
+
+![image13](https://github.com/user-attachments/assets/ed3515b3-b84b-459b-85fa-ca5b598dec7d)
+
 
 Now if I add a new user to the OU and repeat the steps as before, a new
 folder will be created for the new user, and no new folder will be
 created for the existing users because it already exists for them
 
-![](output\c. Active Directory/media/image15.png){width="8.223958880139982in"
-height="4.1376793525809274in"}
+![image15](https://github.com/user-attachments/assets/1c1d6f7c-2956-4c61-9708-1d02953d44d8)
+
 
 Now, logging into User1, I can access this folder
 
-![](output\c. Active Directory/media/image2.png){width="8.07812554680665in"
-height="3.8034503499562553in"}
+![image2](https://github.com/user-attachments/assets/21262d0c-9ff7-48aa-a40f-a93d6b6cd937)
+
 
 As User1, I created a text file in the folder called "Secrit Dokumints"
 
-![](output\c. Active Directory/media/image7.png){width="7.78125in"
-height="2.5625in"}
+![image7](https://github.com/user-attachments/assets/06058b27-1bf8-45c7-8959-10490837d82a)
 
 Now, logging into AFTER1, I can see this unique home folder
 
-![](output\c. Active Directory/media/image11.png){width="10.0in"
-height="3.611111111111111in"}
+![image11](https://github.com/user-attachments/assets/81cdd639-23f9-42c2-aef5-4ab35113c0c4)
 
-#### **Making each user's home folder secure to each other**
+
+### **Making each user's home folder secure to each other**
 
 However, I noticed that I could just put in "\\\\SERVER\\" in the path
 and I would be able to access all the folders, being able to see the
@@ -126,8 +123,8 @@ the fundamental knowledge for that yet. I can still attempt it, however.
 Back on the administrator's system, I create a new group in the OU
 called "RESTRICTED_ACCESSS" and add the users in that group
 
-![](output\c. Active Directory/media/image6.png){width="10.0in"
-height="4.986111111111111in"}
+![image6](https://github.com/user-attachments/assets/746ee357-7644-48e8-b2c4-aad5f2aff757)
+
 
 I created a new GPO and tried to look through the folders there, but I
 couldn't find anything. My next guess was to just edit the folder
@@ -157,8 +154,8 @@ system admin doesn't have to keep unchecking that box every time.
 Now, logging back onto AFTER1, I can no longer access User1's folder,
 but I can access my own (AFTER1's).
 
-![](output\c. Active Directory/media/image10.png){width="9.088542213473316in"
-height="4.843386920384952in"}
+![image10](https://github.com/user-attachments/assets/415ddbd2-7b10-44ea-ae68-71c61edf5e3e)
+
 
 And as User1, I can access my own User1 folder and the "Secrit
 Dokumints" text file inside, but I cannot access AFTER1's folder

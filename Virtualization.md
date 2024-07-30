@@ -5,16 +5,16 @@ In this mini-project, I am enabling Virtual PC in Windows 7 and Hyper-V in Windo
 
 Opening Windows Virtual PC -\> Create Virtual Machine
 
-![](output\d. Virtualization/media/image4.png){width="7.630208880139983in"
-height="5.722656386701662in"}
+![image4](https://github.com/user-attachments/assets/244e27f0-9f08-4d19-b440-db76b22faeab)
+
 
 I don't have an ISO file in this lab, so I skip the next step of
 inserting the boot media to set up the operating system for that
 machine. However, I could always download one online from Microsoft's
 website for Windows.
 
-![](output\d. Virtualization/media/image9.png){width="6.223958880139983in"
-height="4.3645505249343834in"}
+![image9](https://github.com/user-attachments/assets/950a6c60-cf88-4525-bb23-3d13740697df)
+
 
 ### Windows XP Mode
 

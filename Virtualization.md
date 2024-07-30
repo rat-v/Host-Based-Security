@@ -36,14 +36,14 @@ First, I need to enable the feature, then restart the PC<br>
 
 ![image1](https://github.com/user-attachments/assets/b369123a-4ff8-4772-b078-7faf248cc8bd)
 
-![image6](https://github.com/user-attachments/assets/2082a4f3-698f-43bb-84b3-61123c1e6588)
-
 
 Next, I can open the Hyper-V Manager and create a virtual switch that
 the virtual machines can use. **External** allows VMs to communicate
 with the external/outside network. **Internal** allows VMs to
 communicate with each other and the host. **Private** allows VMs to
 communicate with each other privately.
+
+![image6](https://github.com/user-attachments/assets/2082a4f3-698f-43bb-84b3-61123c1e6588)
 
 Now, I can create a new virtual machine and go through the wizard. I
 will click next for custom settings, rather than to finish with default

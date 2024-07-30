@@ -2,18 +2,18 @@
 In this lab, I am exploiting a Windows Machine with Metasploit by using a vulnerability found with Nmap. I will then use this knowledge to harden the system so it doesn’t happen.
 
 ## Skills Learned
-Using Nmap to enumerate hosts and scan for open services on a target machine
-Identifying critical services such as FTP, HTTP, and SMB
-Setting Metasploit options to exploit vulnerabilities
-Gaining access to a target system using Meterpreter and command prompt
-Logging in anonymously to an FTP server and downloading/uploading files
-Understanding the security risks associated with FTP and HTTP
-Listing SMB shares and accessing them without authentication
-Creating new user accounts and adding them to the administrators group
-Applying user privilege escalation techniques
-Removing unnecessary roles and features from a Windows server (e.g., Web Server and FTP Server)
-Identifying unauthorized users with administrative permissions
-Disabling and deleting unauthorized user accounts
+Using Nmap to enumerate hosts and scan for open services on a target machine <br>
+Identifying critical services such as FTP, HTTP, and SMB <br>
+Setting Metasploit options to exploit vulnerabilities <br>
+Gaining access to a target system using Meterpreter and command prompt <br>
+Logging in anonymously to an FTP server and downloading/uploading files <br>
+Understanding the security risks associated with FTP and HTTP <br>
+Listing SMB shares and accessing them without authentication <br>
+Creating new user accounts and adding them to the administrators group <br>
+Applying user privilege escalation techniques <br>
+Removing unnecessary roles and features from a Windows server (e.g., Web Server and FTP Server) <br>
+Identifying unauthorized users with administrative permissions <br>
+Disabling and deleting unauthorized user accounts <br>
 
 
 ## Open Ports

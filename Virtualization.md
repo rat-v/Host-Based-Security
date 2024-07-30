@@ -1,7 +1,7 @@
-In this mini-project, I am enabling Virtual PC in Windows 7 and Hyper-V
-in Windows 10
+## Objective
+In this mini-project, I am enabling Virtual PC in Windows 7 and Hyper-V in Windows 10
 
-### Virtual PC on Windows 7
+## Virtual PC on Windows 7
 
 Opening Windows Virtual PC -\> Create Virtual Machine
 
@@ -16,7 +16,7 @@ website for Windows.
 ![](output\d. Virtualization/media/image9.png){width="6.223958880139983in"
 height="4.3645505249343834in"}
 
-#### Windows XP Mode
+### Windows XP Mode
 
 By installing Virtual PC on this system, I can create virtual machines
 as well as also enable "Windows XP" mode to run Windows XP directly on a
@@ -27,16 +27,15 @@ does not work for Windows 7.
 After just going through the installation wizard, I can run a Windows XP
 virtual machine on the system.
 
-![](output\d. Virtualization/media/image2.png){width="10.0in"
-height="7.541666666666667in"}
+![image2](https://github.com/user-attachments/assets/035a8ce4-a2ee-4dbb-b416-86d4ed44b041)
 
-### Hyper-V on Windows 10
+
+## Hyper-V on Windows 10
 
 First, I need to enable the feature, then restart the PC
+![image1](https://github.com/user-attachments/assets/b369123a-4ff8-4772-b078-7faf248cc8bd)
+![image6](https://github.com/user-attachments/assets/2082a4f3-698f-43bb-84b3-61123c1e6588)
 
-![](output\d. Virtualization/media/image1.png){width="5.145833333333333in"
-height="4.65625in"}![](output\d. Virtualization/media/image6.png){width="4.5in"
-height="3.4791666666666665in"}
 
 Next, I can open the Hyper-V Manager and create a virtual switch that
 the virtual machines can use. **External** allows VMs to communicate
@@ -49,20 +48,20 @@ will click next for custom settings, rather than to finish with default
 settings. This is so I can set the switch as the virtual switch I just
 created.
 
-![](output\d. Virtualization/media/image8.png){width="10.0in"
-height="6.847222222222222in"}
+![image8](https://github.com/user-attachments/assets/28b5cf79-61a5-47b3-8e6c-8c87c2a02213)
+
 
 **In this installation, I do have an iso file that I can use to install
 the operating system**
 
-![](output\d. Virtualization/media/image3.png){width="10.0in"
-height="6.597222222222222in"}
+![image3](https://github.com/user-attachments/assets/60815fee-d11a-4232-86f8-74035782c383)
 
-![](output\d. Virtualization/media/image7.png){width="10.0in"
-height="6.847222222222222in"}
+
+![image7](https://github.com/user-attachments/assets/7b5c05ec-21d6-4c1e-889f-bd505056003d)
+
 
 From here, I can then continue to install windows which I will not do as
 I don't have the correct drivers to install.
 
-![](output\d. Virtualization/media/image5.png){width="7.747201443569554in"
-height="6.488280839895013in"}
+![image5](https://github.com/user-attachments/assets/c50b3849-fa10-4a54-99b4-f242796e02dd)
+

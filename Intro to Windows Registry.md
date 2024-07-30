@@ -1,8 +1,18 @@
+## Objective
 In this lab, I am exposing myself to the Windows Registry Editor,
 looking around the hives for useful information. I will then use FTK
 imager to take a snapshot of the current Registry settings and analyze
 some of the system files using Windows Registry Recovery. I can find
 different information depending on the type of file I analyze.
+
+## Skills Learned
+Navigating the Windows Registry Editor<br>
+Using FTK Imager to take Registry snapshots<br>
+Analyzing system files with Windows Registry Recovery<br>
+Locating Locale settings, IDing Startup Apps, and Looking through DHCP Settings in the Registry<br>
+Saving and organizing Registry snapshot files<br>
+Viewing and analyzing Registry files safely with Windows Registry Recovery<br>
+Finding network information in the 'system' file<br>
 
 ### **Checking Locale**
 

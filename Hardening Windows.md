@@ -80,6 +80,7 @@ From here, I can remove all the roles related to the Web Server. The website is 
 
 
 Now, when going back to the Kali machine and scanning the Windows machine with Nmap, the HTTP and FTP ports are no longer showing up as open. 
+
 ![image](https://github.com/user-attachments/assets/ed9d7a94-c5d8-4e68-940c-b350f96ca49a)
 
 

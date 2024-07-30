@@ -1,8 +1,8 @@
 In this lab, I am exploiting a Windows Machine with Metasploit by using a vulnerability found with Nmap. I will then use this knowledge to harden the system so it doesn’t happen.
 
-### Open Ports
+## Open Ports
 I am using a Kali Linux system. I can ping the other Windows System in the network. I also use nmap to scan the system for any open ports. 
-#### FTP
+### FTP
 ![image](https://github.com/user-attachments/assets/074a581f-8d2c-4032-9a42-e30f374888ac)
 
 
@@ -19,12 +19,12 @@ Now that I have logged in anonymously, I can view what files I can download from
 ![image](https://github.com/user-attachments/assets/061fa110-1508-4e3e-ac7b-9045dd90e8fd)
 
 
-#### HTTP
+### HTTP
 In the Nmap scan, the HTTP port was also shown to be open. I can type ‘192.168.1.100’ in the URL bar of a web browser to see if a website has been set up for the company. It seems to be the default IIS web page, so it has not been configured.
 ![image](https://github.com/user-attachments/assets/f0225d1c-e4fe-4fdf-9fff-850a8375bdc6)
 
 
-#### SMB
+### SMB
 The Nmap scan also showed port 445 open. I am completely unfamiliar with SMB, so I am following the lab closely.
 **‘smb -L 192.168.1.100’** to list the shares on the system
 When prompted for the password, I was able to just hit enter and then I had access.
@@ -33,7 +33,7 @@ When prompted for the password, I was able to just hit enter and then I had acce
 
 There is a critical 2016 SMB Windows Server vulnerability designated as MS17-010, this is what will be used to exploit the machine.
 
-### Exploiting the Machine
+## Exploiting the Machine
 **‘msfdb init’** to initialize a metasploit database
 **‘msfconsole’** to initialize metasploit
 
@@ -62,11 +62,11 @@ Within command prompt, I can create a new user and escalate that user to have ad
 ![image](https://github.com/user-attachments/assets/26b69f2e-5d84-4e93-ad72-86d0d5315274)
 
 
-### Hardening the Machine
+## Hardening the Machine
 Now working on the Windows machine that was just attacked.
 When logging in, a “Server Manager” window opened up. 
 
-#### FTP and HTTP
+### FTP and HTTP
 Manage → Remove Roles and Features
 ![image](https://github.com/user-attachments/assets/3f2a24c8-f181-46f4-8362-a3e8e18d16d0)
 
@@ -86,7 +86,7 @@ Now, when going back to the Kali machine and scanning the Windows machine with N
 The SMB vulnerability is still up, at this point, so now I will secure the system from that.
 
 
-#### SMB
+### SMB
 Going back to the Windows machine, the guest user for the system is active which is allowing attackers to browse shares on the machine, as well as allowing the MS17-010 exploit to work.
 ![image](https://github.com/user-attachments/assets/33814ba6-4a09-4460-91b5-58fc539ee6ba)
 
@@ -110,7 +110,7 @@ Additionally, I run into problems when I attempt to exploit the machine again in
 
 I find it amazing how something as simple as disabling the guest account can completely prevent this attack.
 
-#### Cleaning Up
+### Cleaning Up
 Now that the vulnerability is closed, I can clean up the damage done by the Kali machine
 
 On the Windows machine, I can view users with administrator permissions

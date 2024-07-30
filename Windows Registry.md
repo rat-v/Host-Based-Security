@@ -4,21 +4,21 @@ imager to take a snapshot of the current Registry settings and analyze
 some of the system files using Windows Registry Recovery. I can find
 different information depending on the type of file I analyze.
 
-#### **Checking Locale**
+### **Checking Locale**
 
 HKEY Current User \> Control Panel \> {International}
 
-#### **Checking for Startup Apps**
+### **Checking for Startup Apps**
 
 HKEY Current User \> Software \> Microsoft \> Windows \> CurrentVersion
 \> {Run}
 
-#### **Checking DHCP Information**
+### **Checking DHCP Information**
 
 HKEY Local Machine \> System \> CurrentControlSet \> Services \> Tcpip
 \> Parameters \> Interface \> {'One of the folders will give info'}
 
-### FTK Imager - Obtaining a Live Windows Registry
+## FTK Imager - Obtaining a Live Windows Registry
 
 This tool takes a snapshot of the current Registry settings which is
 useful to analyze them without worrying about changes
@@ -26,18 +26,16 @@ useful to analyze them without worrying about changes
 I can save the files to a created folder named RegsitryFiles by clicking
 on Obtain System Files
 
-![](output\b. Windows Registry/media/image1.png){width="8.28125in"
-height="5.541666666666667in"}
+![image1](https://github.com/user-attachments/assets/7beba5fd-3978-46b1-b55a-2167101548ba)
+
 
 This results in files being saved to that folder, but I don't yet
 understand what they mean.
 
-![](output\b. Windows Registry/media/image4.png){width="10.0in"
-height="4.347222222222222in"}
+![image4](https://github.com/user-attachments/assets/5beac684-1475-4304-a9a8-4c335014830b)
 
-###  
 
-### **Windows Registry Recovery**
+## **Windows Registry Recovery**
 
 Using the Windows Registry Recovery application, I can view these files
 in the folder. It's much safer to view registry files like this, rather
@@ -46,17 +44,17 @@ values can critically corrupt the machine.
 
 I can find user information in the SAM file
 
-![](output\b. Windows Registry/media/image5.png){width="7.458333333333333in"
-height="3.7238801399825023in"}
+![image5](https://github.com/user-attachments/assets/9d3d6563-61b3-4c9e-b1c3-0718c1e99c31)
+
 
 I can find network information in the 'system' file, moving to the
 TCP/IP tab
 
-![](output\b. Windows Registry/media/image3.png){width="7.59375in"
-height="5.2599923447069115in"}
+![image3](https://github.com/user-attachments/assets/998f7839-c3e4-45c1-b49b-c789f30ec2a1)
+
 
 I can also find information about running services in the same 'system'
 file
 
-![](output\b. Windows Registry/media/image2.png){width="8.072916666666666in"
-height="4.660688976377953in"}
+![image2](https://github.com/user-attachments/assets/18759477-34aa-4b68-bc58-1195cfb4eb25)
+
